@@ -1,0 +1,16 @@
+CREATE TABLE IndianRecipes (
+    RecipeID INT PRIMARY KEY AUTO_INCREMENT,
+    RecipeName VARCHAR(100) NOT NULL,
+    Ingredients TEXT NOT NULL,
+    Instructions TEXT NOT NULL,
+    CookingTime INT,
+    Servings INT,
+    Cuisine VARCHAR(50) DEFAULT 'Indian'
+);
+
+INSERT INTO IndianRecipes (RecipeName, Ingredients, Instructions, CookingTime, Servings) VALUES
+('Butter Chicken', 'Chicken, Butter, Cream, Tomato, Spices', 'Marinate chicken, cook in butter, add cream and spices.', 45, 4),
+('Biryani', 'Rice, Chicken, Spices, Yogurt, Onion', 'Layer rice and marinated chicken, cook on low heat.', 60, 6),
+('Paneer Tikka', 'Paneer, Yogurt, Spices, Bell Peppers', 'Marinate paneer, skewer with veggies, grill until charred.', 30, 2),
+('Samosa', 'Potatoes, Peas, Spices, Flour', 'Prepare dough, fill with spiced potatoes, deep fry until golden.', 40, 4),
+('Chole Bhature', 'Chickpeas, Flour, Spices, Onion', 'Cook chickpeas with spices, serve with fried bread.', 50, 4);
